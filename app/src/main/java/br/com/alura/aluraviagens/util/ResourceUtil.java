@@ -16,11 +16,4 @@ public class ResourceUtil {
                 , DRAWABLE, context.getPackageName());
         return resources.getDrawable(idDoDrawable);
     }
-
-    public static Drawable devolveDrawable2(Context context, String drawableEmTexto) {
-        Resources resources = context.getResources();
-        int idDoDrawable = resources.getIdentifier(drawableEmTexto
-                , DRAWABLE, context.getPackageName());
-        return ResourcesCompat.getDrawable(resources, idDoDrawable, resources.newTheme());
-    }
 }
